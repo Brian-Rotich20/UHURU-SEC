@@ -5,284 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uhuru Secondary - Admission Requirements</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        .requirements-page {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 30px 15px;
-        }
-
-        .page-header {
-            background-color: #0056b3;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-            margin-bottom: 30px;
-            border-radius: 10px;
-        }
-
-        .page-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-
-        .page-header p {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .requirements-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-        }
-
-        .requirement-card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding: 30px;
-            transition: transform 0.3s ease;
-        }
-
-        .requirement-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .requirement-card h2 {
-            color: #0056b3;
-            border-bottom: 3px solid #0056b3;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-        }
-
-        .requirement-list {
-            list-style-type: none;
-        }
-
-        .requirement-list li {
-            margin-bottom: 15px;
-            display: flex;
-            align-items: start;
-        }
-
-        .requirement-list li i {
-            margin-right: 15px;
-            color: #0056b3;
-            font-size: 1.2rem;
-            margin-top: 5px;
-        }
-
-        .requirement-list li span {
-            flex: 1;
-        }
-
-        .download-section {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding: 30px;
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        .download-btns {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .download-btn {
-            display: inline-block;
-            background-color: #0056b3;
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .download-btn:hover {
-            background-color: #003d82;
-        }
-
-        @media screen and (max-width: 768px) {
-            .requirements-container {
-                grid-template-columns: 1fr;
-            }
-
-            .page-header h1 {
-                font-size: 2rem;
-            }
-
-            .page-header p {
-                font-size: 1rem;
-                padding: 0 15px;
-            }
-
-            .requirement-card {
-                padding: 20px;
-            }
-
-            .download-btns {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .download-btn {
-                width: 100%;
-                text-align: center;
-                margin-bottom: 15px;
-            }
-        }
-    </style>
 </head>
-    <!--Header-->
+<body>
+    <!-- Header -->
     <header class="header">
-        <a href="#Home" class="logo"><span>UHURU</span> SECONDARY</a>
-    
+        <div class="logo-container">
+            <img src="schlogo.jpeg" alt="Uhuru Secondary School Logo" class="logo-image">
+            <a href="index.html" class="logo"><span>UHURU SECONDARY</span></a>
+        </div>
         <nav class="navbar">
-          <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="requirements.html">Admission</a></li>
-            <li><a href="#Academics">Academics</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
+            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="history.html">School History</a>
+                        <a href="mission.html">Mission & Vision</a>
+                        <a href="leadership.html">Leadership</a>
+                        <a href="achievements.html">Achievements</a>
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                </li>
+                <li><a href="requirements.html">Admission</a></li>
+                <li class="dropdown">
+                    <a href="academics.html">Academics</a>
+                    <div class="dropdown-content">
+                        <a href="curriculum.html">Curriculum</a>
+                        <a href="departments.html">Departments</a>
+                        <a href="academic-calendar.html">Academic Calendar</a>
+                        <a href="#news">Educational News</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
-        <div class="dropdown_menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="#Admission">Admission</a></li>
-            <li><a href="#Academics">Academics</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+    </header>
+    <!-- End Header -->
+
+    <!-- Requirements Page -->
+    <div class="requirements-page">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Admission Requirements</h1>
+            <p>Detailed list of documents and items required for admission to Uhuru Secondary School</p>
         </div>
-      </header>
 
-    <!--end Header-->
-    <body>
-    
+        <!-- Requirements Sections -->
+        <div class="requirements-container">
+            <!-- General Requirements -->
+            <div class="requirement-card">
+                <h2>General Requirements</h2>
+                <ul class="requirement-list">
+                    <li><i class="fas fa-certificate"></i><span>Certified copy of Birth Certificate</span></li>
+                    <li><i class="fas fa-file-alt"></i><span>KCPE result slip certified by former head teacher</span></li>
+                    <li><i class="fas fa-image"></i><span>Two passport size photographs with name printed at the back</span></li>
+                    <li><i class="fas fa-graduation-cap"></i><span>School Leaving Certificate signed and stamped</span></li>
+                    <li><i class="fas fa-notes-medical"></i><span>Medical certificate duly filled by a qualified doctor</span></li>
+                    <li><i class="fas fa-file-invoice"></i><span>ID copies of Parents/Guardians</span></li>
+                    <li><i class="fas fa-money-bill-wave"></i><span>Fees (per 2023 Fees Structure)</span></li>
+                    <li><i class="fas fa-id-card"></i><span>Two colored passport photographs for Parents/Guardians</span></li>
+                </ul>
+            </div>
 
-        <div class="requirements-page">
-            <!-- Page Header -->
-            <div class="page-header">
-                <h1>Admission Requirements</h1>
-                <p>Detailed list of documents and items required for admission to Uhuru Secondary School</p>
+            <!-- Boarding Requirements -->
+            <div class="requirement-card">
+                <h2>Boarding Requirements</h2>
+                <ul class="requirement-list">
+                    <li><i class="fas fa-shower"></i><span>A towel</span></li>
+                    <li><i class="fas fa-tshirt"></i><span>Underwear (at least 5 pairs)</span></li>
+                    <li><i class="fas fa-tooth"></i><span>Toothpaste and toothbrush</span></li>
+                    <li><i class="fas fa-shoe-prints"></i><span>2 pairs of black laced-up leather shoes</span></li>
+                    <li><i class="fas fa-soap"></i><span>Washing and bathing soap (enough for one term)</span></li>
+                    <li><i class="fas fa-box"></i><span>Tin trunk with name printed and good padlocks</span></li>
+                    <li><i class="fas fa-toilet-paper"></i><span>Toilet paper (at least 10 for the term)</span></li>
+                    <li><i class="fas fa-bucket"></i><span>A metal bucket/pail (big size)</span></li>
+                    <li><i class="fas fa-money-bill-alt"></i><span>Pocket money (Maximum Kshs.1,000/- per term)</span></li>
+                </ul>
             </div>
-    
-            <!-- Requirements Sections -->
-            <div class="requirements-container">
-                <!-- General Requirements -->
-                <div class="requirement-card">
-                    <h2>General Requirements</h2>
-                    <ul class="requirement-list">
-                        <li><i class="fas fa-certificate"></i><span>Certified copy of Birth Certificate</span></li>
-                        <li><i class="fas fa-file-alt"></i><span>KCPE result slip certified by former head teacher</span></li>
-                        <li><i class="fas fa-image"></i><span>Two passport size photographs (not from 'photo me studios'), with name printed at back and signed by former head teacher</span></li>
-                        <li><i class="fas fa-graduation-cap"></i><span>School Leaving Certificate signed and stamped by former primary school head</span></li>
-                        <li><i class="fas fa-notes-medical"></i><span>Medical certificate duly filled by a qualified doctor</span></li>
-                        <li><i class="fas fa-file-invoice"></i><span>ID copies of Parents/Guardians</span></li>
-                        <li><i class="fas fa-money-bill-wave"></i><span>Fees (per 2023 Fees Structure)</span></li>
-                        <li><i class="fas fa-id-card"></i><span>Two (2) Colored Passport Photographs for Parents/Guardians/Sponsor</span></li>
-                    </ul>
-                </div>
-    
-                <!-- Boarding Requirements -->
-                <div class="requirement-card">
-                    <h2>Boarding Requirements</h2>
-                    <ul class="requirement-list">
-                        <li><i class="fas fa-shower"></i><span>A towel</span></li>
-                        <li><i class="fas fa-tshirt"></i><span>Underwear (at least 5 pairs)</span></li>
-                        <li><i class="fas fa-tooth"></i><span>Toothpaste and toothbrush</span></li>
-                        <li><i class="fas fa-shoe-prints"></i><span>2 pairs of black laced-up leather shoes</span></li>
-                        <li><i class="fas fa-shoe-prints"></i><span>1 pair of white rubber shoes</span></li>
-                        <li><i class="fas fa-soap"></i><span>Washing and bathing soap (enough for one term)</span></li>
-                        <li><i class="fas fa-box"></i><span>Tin trunk with name printed and good padlocks</span></li>
-                        <li><i class="fas fa-toilet-paper"></i><span>Toilet paper (at least 10 for the term)</span></li>
-                        <li><i class="fas fa-utensil-spoon"></i><span>A spoon</span></li>
-                        <li><i class="fas fa-lock"></i><span>Two good padlocks for desk and locker</span></li>
-                        <li><i class="fas fa-shoe-prints"></i><span>A pair of slippers</span></li>
-                        <li><i class="fas fa-bucket"></i><span>A metal bucket/pail (big size)</span></li>
-                        <li><i class="fas fa-bus"></i><span>End of term bus fare</span></li>
-                        <li><i class="fas fa-money-bill-alt"></i><span>Pocket money (Maximum Kshs.1,000/- per term) to be paid in cash to Acc. Office</span></li>
-                        <li><i class="fas fa-shopping-bag"></i><span>School bag (reasonable size for day-to-day use)</span></li>
-                    </ul>
-                </div>
-    
-                <!-- Stationery and Books -->
-                <div class="requirement-card">
-                    <h2>Stationery and Books</h2>
-                    <ul class="requirement-list">
-                        <li><i class="fas fa-ruler"></i><span>Geometrical set</span></li>
-                        <li><i class="fas fa-ruler"></i><span>30cm transparent ruler</span></li>
-                        <li><i class="fas fa-calculator"></i><span>4-figure Mathematics table (6th edition)</span></li>
-                        <li><i class="fas fa-file"></i><span>Spring file</span></li>
-                        <li><i class="fas fa-pen"></i><span>Blue biro pens and pencils</span></li>
-                        <li><i class="fas fa-book"></i><span>Oxford Advanced Learner's Dictionary</span></li>
-                        <li><i class="fas fa-book"></i><span>Kamusi ya Kiswahili Sanifu (TUKI)</span></li>
-                        <li><i class="fas fa-book"></i><span>A Rebirth (OUP)</span></li>
-                        <li><i class="fas fa-book"></i><span>Heri Subira (OUP) (Class reader)</span></li>
-                    </ul>
-                </div>
-            </div>
-    
-            <!-- Download Section -->
-            <div class="download-section">
-                <h2>Application Documents</h2>
-                <p>Download our comprehensive application package and begin your journey with Uhuru Secondary School.</p>
-                <div class="download-btns">
-                    <a href="#" class="download-btn" download>
-                        <i class="fas fa-file-pdf"></i> Application Form (PDF)
-                    </a>
-                    <a href="#" class="download-btn" download>
-                        <i class="fas fa-file-alt"></i> Requirements Checklist
-                    </a>
-                </div>
+
+            <!-- Stationery and Books -->
+            <div class="requirement-card">
+                <h2>Stationery and Books</h2>
+                <ul class="requirement-list">
+                    <li><i class="fas fa-ruler"></i><span>Geometrical set</span></li>
+                    <li><i class="fas fa-calculator"></i><span>4-figure Mathematics table (6th edition)</span></li>
+                    <li><i class="fas fa-pen"></i><span>Blue biro pens and pencils</span></li>
+                    <li><i class="fas fa-book"></i><span>Oxford Advanced Learner's Dictionary</span></li>
+                    <li><i class="fas fa-book"></i><span>Kamusi ya Kiswahili Sanifu (TUKI)</span></li>
+                </ul>
             </div>
         </div>
- <!--end requirements-->
 
- <!--footer-->
-<div class="footerContainer">
-    <div class="socialIcons">
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-youtube"></i></a>
-        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-        <a href=""><i class="fa-brands fa-x"></i></a>
+        <!-- Download Section -->
+        <div class="download-section">
+            <h2>Application Documents</h2>
+            <p>Download our comprehensive application package and begin your journey with Uhuru Secondary School.</p>
+            <div class="download-btns">
+                <a href="#" class="download-btn" download>
+                    <i class="fas fa-file-pdf"></i> Application Form (PDF)
+                </a>
+                <a href="#" class="download-btn" download>
+                    <i class="fas fa-file-alt"></i> Requirements Checklist
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="footerNav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#About Us">About Us</a></li>
-            <li><a href="#Admission">Admission</a></li>
-            <li><a href="#Academics">Academics</a></li>
-            <li><a href="#Contact Us">Contact Us</a></li>
-        </ul>
-    </div>
-    <div class="FooterBottom">
-        <p>Copyright &copy;2025. Developed by 0746283068 </p>
-    </div>
-</div>
-<!--End footer-->
-    </body>
+    <!-- End Requirements Page -->
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-section motto-section">
+                <h4>Our Motto & Vision</h4>
+                <p><strong>"SERVE TO REIGN"</strong></p>
+                <p>We are committed to creating a transformative educational environment that fosters intellectual growth, critical thinking, and personal development, preparing students to become innovative global leaders.</p>
+            </div>
+            <div class="footer-section contact-section">
+                <h4>Contact Information</h4>
+                <a href="tel:+254742003000"><i class="fas fa-phone"></i> +254 742 003 000</a>
+                <a href="mailto:admissions@uhurusecondary.edu"><i class="fas fa-envelope"></i> admissions@uhurusecondary.edu</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> 123 Buruburu Way</a>
+            </div>
+            <div class="footer-section newsletter-section">
+                <h4>Stay Connected</h4>
+                <form class="newsletter-form">
+                    <input type="email" id="email" placeholder="Subscribe to our newsletter" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Uhuru Sec School. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="script.js"></script>
+</body>
 </html>

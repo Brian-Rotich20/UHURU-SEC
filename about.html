@@ -3,177 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-    <!--Header-->
+<body>
+    <!-- Header -->
     <header class="header">
-        <a href="#Home" class="logo"><span>UHURU</span> SECONDARY</a>
-    
-        <nav class="navbar">
-          <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="requirements.html">Admission</a></li>
-            <li><a href="requirements.html">Academics</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
-        <div class="dropdown_menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="#Admission">Admission</a></li>
-            <li><a href="#Academics">Academics</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+        <div class="logo-container">
+            <img src="schlogo.jpeg" alt="Uhuru Secondary School Logo" class="logo-image">
+            <a href="index.html" class="logo"><span>UHURU SECONDARY</span></a>
         </div>
-      </header>
-    <!--end Header-->
-    <body>
-        <!--About us-->
-        <section class="landing-page">
-            <div class="landing-content">
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="history.html">School History</a>
+                        <a href="mission.html">Mission & Vision</a>
+                        <a href="leadership.html">Leadership</a>
+                        <a href="achievements.html">Achievements</a>
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                </li>
+                <li><a href="requirements.html">Admission</a></li>
+                <li class="dropdown">
+                    <a href="academics.html">Academics</a>
+                    <div class="dropdown-content">
+                        <a href="curriculum.html">Curriculum</a>
+                        <a href="departments.html">Departments</a>
+                        <a href="academic-calendar.html">Academic Calendar</a>
+                        <a href="#news">Educational News</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Landing Section -->
+    <section class="landing-page">
+        <div class="landing-content">
             <div class="angled-section"></div>
             <h1 class="landing-title">About Our School</h1>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us">
+        <div class="container">
+            <div class="about">
+                <div class="about-content">
+                    <h2>Get to Know Us</h2>
+                    <p><b>Uhuru Secondary</b> is a school that builds great values and culture among its students. Many come as young boys and leave as men strong in not only body but also mind and character. We have nurtured many young men who end up being impactful in the nation.</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <!-- End About Us Section -->
 
-        <style>
-            .landing-page {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 300px;
-            background: linear-gradient(to right, #eb7e02, #ec6b02); /* Two-color background */
-            color: white;
-            position: relative;
-            overflow: hidden;
-            padding: 20px; /* Add padding for smaller screens */
-            }
+    <!-- Our History Section -->
+    <section id="our-history">
+        <div class="our-history">
+            <div class="our-history-heading">
+                <h1>Our History</h1>
+                <p>School Founding</p>
+            </div>
+            <div class="our-history-content">
+                <p>Form one students' admission takes place every year for students who aspire to join us and meet the requirements. Thousands of students have been admitted over the years, who end up being great people in our society. Kick-start your academic journey by seeing our requirements and filling the admission PDF, which can be downloaded via the button below.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End Our History Section -->
 
-            .angled-section {
-            background-color: #ffffff; /* Angled section color */
-            color: #fff;
-            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            }
-
-            .landing-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #071141e2;
-            margin: 0;
-            z-index: 2;
-            position: relative;
-            text-align: center;
-            }
-
-            @media (max-width: 768px) {
-            .landing-page {
-                height: 200px; /* Adjust height for smaller screens */
-            }
-
-            .landing-title {
-                font-size: 1.8rem; /* Adjust font size for smaller screens */
-            }
-            }
-
-            @media (max-width: 480px) {
-            .landing-page {
-                height: 150px; /* Further adjust height for very small screens */
-            }
-
-            .landing-title {
-                font-size: 1.5rem; /* Further adjust font size for very small screens */
-            }
-            }
-        </style>
-        <section id="About Us">
+    <!-- Mission Section -->
+    <section id="mission">
+        <div class="container">
             <div class="heading">
-                <!-- <p>Uhuru secondary is a school with great history and a rich culture throughout the years.</p>   -->
+                <h1>School Mission</h1>
             </div>
-            <div class="container">
-                <section class="about">
-                        <div class="about-content">
-                            <h2>Get to know us</h2>
-                            <p>Uhuru secondary is a school which builds great values and culture among its students.Many come us young boys and leave as men strong in not only body but also mind and  character.We have natured many young men who end up to be impactful in the nation.</p>
-                    </div>
-                </section>
-            </div>
-        </section>
-        <!--end About us-->
-        <!--Our-history-->
-        <section id="Our-history">
-            <div class="our-history">
-                <div class="our-history-heading">
-                    <h1>Our History</h1>
-                    <p>School founding</p>
+            <div class="about">
+                <div class="about-image">
+                    <img src="images/uhuru.jpg" alt="School Image">
                 </div>
-                <div class="our-history-content">
-                    <p>Form one students admission takes place every yearly as students who aspire to join us and meet the requirements.Thousands of students have been admitted over the years.Who end up being great people in our society.Kick start your academic journey by seeing our requirements and filling the admission pdf which can be downloaded via the button below.</p>
+                <div class="about-content">
+                    <p>Uhuru Secondary is a school that builds great values and culture among its students. Many come as young boys and leave as men strong in not only body but also mind and character. We have nurtured many young men who end up being impactful in the nation.</p>
                 </div>
             </div>
-            </section>
-        <!--Our-history-->
+        </div>
+    </section>
+    <!-- End Mission Section -->
 
-        <!--Mission-->
-        <section id="About Us">
-            <div class="heading">
-                <h1>School Mission</h1> 
+    <!-- Vision Section -->
+    <section id="vision">
+        <div class="our-history">
+            <div class="our-history-heading">
+                <h1>School Vision</h1>
             </div>
-            <div class="container">
-                <section class="about">
-                    <div class="about-image">
-                        <img src="images/uhuru.jpg" alt="school image">
-                     </div>
-                        <div class="about-content">
-                            <p>Uhuru secondary is a school which builds great values and culture among its students.Many come us young boys and leave as men strong in not only body but also mind and  character.We have natured many young men who end up to be impactful in the nation.</p>
-                    </div>
-                </section>
+            <div class="our-history-content">
+                <p>Form one students' admission takes place every year for students who aspire to join us and meet the requirements. Thousands of students have been admitted over the years, who end up being great people in our society. Kick-start your academic journey by seeing our requirements and filling the admission PDF, which can be downloaded via the button below.</p>
             </div>
-        </section>
-        <!--end Mission-->
-         <!--School Vision-->
-         <section id="Our-history">
-            <div class="our-history">
-                <div class="our-history-heading">
-                    <h1>School Vision</h1>
-                </div>
-                <div class="our-history-content">
-                    <p>Form one students admission takes place every yearly as students who aspire to join us and meet the requirements.Thousands of students have been admitted over the years.Who end up being great people in our society.Kick start your academic journey by seeing our requirements and filling the admission pdf which can be downloaded via the button below.</p>
-                </div>
-            </div>
-            </section>
-        <!--School Vision-->
+        </div>
+    </section>
+    <!-- End Vision Section -->
 
-        <!--footer-->
-<div class="footerContainer">
-    <div class="socialIcons">
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-x"></i></a>
-    </div>
-    <div class="footerNav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#About Us">About Us</a></li>
-            <li><a href="#Admission">Admission</a></li>
-            <li><a href="#Academics">Academics</a></li>
-            <li><a href="#Contact Us">Contact Us</a></li>
-        </ul>
-    </div>
-    <div class="FooterBottom">
-        <p>Copyright &copy;2025. Developed by 0746283068 </p>
-    </div>
-</div>
-<!--End footer-->
+    <!-- Core Values Section -->
+    <section id="core-values">
+        <div class="container">
+            <div class="core-values-heading">
+                <h1>Our Core Values</h1>
+            </div>
+            <div class="core-values-content">
+                <div class="value-grid">
+                    <div class="value-item">
+                        <h3>Excellence</h3>
+                        <p>We are committed to academic excellence, encouraging students to pursue their highest potential through rigorous learning, critical thinking, and continuous personal development.</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>Integrity</h3>
+                        <p>We foster a culture of honesty, ethical behavior, and personal responsibility, teaching students to make principled choices and maintain the highest standards of moral conduct.</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>Respect</h3>
+                        <p>We promote mutual respect among students, staff, and the community, valuing diversity, embracing individual differences, and creating an inclusive learning environment.</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>Leadership</h3>
+                        <p>We cultivate leadership skills by empowering students to take initiative, demonstrate courage, and become positive change-makers in their communities and beyond.</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>Holistic Growth</h3>
+                        <p>We believe in nurturing students' intellectual, emotional, physical, and social dimensions, ensuring a comprehensive educational experience that prepares them for life's challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Core Values Section -->
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-section motto-section">
+                <h4>Our Motto & Vision</h4>
+                <p><strong>"SERVE TO REIGN"</strong></p>
+                <p>We are committed to creating a transformative educational environment that fosters intellectual growth, critical thinking, and personal development, preparing students to become innovative global leaders.</p>
+            </div>
+            <div class="footer-section contact-section">
+                <h4>Contact Information</h4>
+                <a href="tel:+254742003000"><i class="fas fa-phone"></i> +254 742 003 000</a>
+                <a href="mailto:admissions@uhurusecondary.edu"><i class="fas fa-envelope"></i> admissions@uhurusecondary.edu</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> 123 Buruburu Way</a>
+            </div>
+            <div class="footer-section newsletter-section">
+                <h4>Stay Connected</h4>
+                <form class="newsletter-form">
+                    <input type="email" id="email" placeholder="Subscribe to our newsletter" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Uhuru Sec School. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
     <script src="script.js"></script>
-    </body>
+</body>
 </html>

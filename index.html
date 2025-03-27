@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +9,59 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
-    <!-- Header -->
     <header class="header">
-        <a href="#home" class="logo"><span>UHURU</span> SECONDARY</a>
+        <div class="logo-container">
+            <img src="schlogo.jpeg" alt="Uhuru Secondary School Logo" class="logo-image">
+            <a href="index.html" class="logo"><span>UHURU SECONDARY </a>
+                <div class="logo-text">
+                    <p class="small-screen-only">SERVE TO REIGN</p>
+                </div>
+        </div>
+
         <nav class="navbar">
             <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+
+                <li class="dropdown">
+                    <a href="about.html">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="history.html">School History</a>
+                        <a href="mission.html">Mission & Vision</a>
+                        <a href="leadership.html">Leadership</a>
+                        <a href="achievements.html">Achievements</a>
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                </li>
+
                 <li><a href="requirements.html">Admission</a></li>
-                <li><a href="#academics">Academics</a></li>
+
+                <li class="dropdown">
+                    <a href="academics.html">Academics</a>
+                    <div class="dropdown-content">
+                        <a href="curriculum.html">Curriculum</a>
+                        <a href="departments.html">Departments</a>
+                        <a href="academic-calendar.html">Academic Calendar</a>
+                        <a href="#news">Educational News</a>
+                    </div>
+                </li>
+
+
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
+
         <div class="dropdown_menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="#admission">Admission</a></li>
+                <li><a href="requirements.html">Admission</a></li>
                 <li><a href="#academics">Academics</a></li>
+                <li><a href="#news">Educational News</a></li>
+                <!-- <li><a href="#gallery">Gallery</a></li> -->
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
@@ -38,7 +72,7 @@
     <section class="home" id="home">
         <div class="content">
             <h1 class="txt__h1"><span>Uhuru</span> Secondary</h1>
-            <p class="txt__p1">Striving for Excellence</p>
+            <p class="txt__p1">SERVE TO REIGN</p>
             <a href="#contact-us" class="cta">Contact us</a>
         </div>
     </section>
@@ -57,31 +91,15 @@
                 </div>
                 <div class="about-content">
                     <h2>Get to know us</h2>
-                    <p>Uhuru Secondary is a school that builds great values and culture among its students. Many come as young boys and leave as men strong in not only body but also mind and character. We have nurtured many young men who end up being impactful in the nation.</p>
+                    <p>Uhuru Secondary is a school that builds great values and culture among its students. Many come as
+                        young boys and leave as men strong in not only body but also mind and character. We have
+                        nurtured many young men who end up being impactful in the nation.</p>
                     <a href="about.html" class="read-more">Read More</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- End About Us Section -->
-
-    <!-- Admission Section -->
-    <section id="admission">
-        <div class="admission">
-            <div class="admission-heading">
-                <h1>Admission</h1>
-                <p>Join us today</p>
-            </div>
-            <div class="about-content">
-                <p>Form one students' admission takes place every year for students who aspire to join us and meet the requirements. Thousands of students have been admitted over the years, who end up being great people in our society. Kick-start your academic journey by seeing our requirements and filling the admission PDF, which can be downloaded via the button below.</p>
-                <div class="admission-buttons">
-                    <a href="requirements.html" class="see-requirements">See Requirements</a>
-                    <a href="requirements.pdf" class="download-pdf">Download Letter</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Admission Section -->
 
     <!-- Academics Section -->
     <section id="academics">
@@ -96,36 +114,138 @@
                 </div>
                 <div class="academics-content">
                     <h3>Success is our culture</h3>
-                    <p>Our performance over the years has been magnificent. Many students have joined great campuses and ended up in good careers.</p>
+                    <p>Our performance over the years has been magnificent. Many students have joined great campuses and
+                        ended up in good careers.</p>
                     <a href="academics.html" class="read-more">Our Performance</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- End Academics Section -->
+    <!-- Admission Section -->
+    <section id="admission">
+        <div class="admission">
+            <div class="admission-heading">
+                <h1>Admission</h1>
+                <p>Join us today</p>
+            </div>
+            <div class="about-content">
+                <p>Form one students' admission takes place every year for students who aspire to join us and meet the
+                    requirements. Thousands of students have been admitted over the years, who end up being great people
+                    in our society. Kick-start your academic journey by seeing our requirements and filling the
+                    admission PDF, which can be downloaded via the button below.</p>
+                <div class="admission-buttons">
+                    <a href="requirements.html" class="see-requirements">See Requirements</a>
+                    <a href="requirements.pdf" class="download-pdf">Download Letter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Admission Section -->
+    <!-- admission steps -->
+    <section id="admission-process">
+        <div class="admission-process-container">
+            <div class="admission-process-heading">
+                <h1>Admission Process</h1>
+                <p>Your pathway to joining Uhuru Secondary</p>
+            </div>
+            <div class="admission-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Download Admission Form</h3>
+                        <p>Visit our website and download the official admission application PDF. Ensure you have the
+                            latest version of the form.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Check Eligibility Requirements</h3>
+                        <p>Carefully review all admission requirements, including academic performance, age criteria,
+                            and necessary documentation.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Complete Application Form</h3>
+                        <p>Fill out the application form completely and accurately. Double-check all information before
+                            submission.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Gather Supporting Documents</h3>
+                        <p>Collect all required supporting documents, including academic transcripts, birth certificate,
+                            and recommendation letters.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Submit Application</h3>
+                        <p>Submit your completed application form and all supporting documents before the specified
+                            deadline.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="admission-cta">
+                <a href="requirements.html" class="btn-primary">View Full Requirements</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footerContainer">
-        <div class="socialIcons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-x"></i></a>
+    <footer class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-section motto-section">
+                <h4>Our Motto & Vision</h4>
+                <p><strong>"SERVE TO REIGN"</strong></p>
+                <p>We are committed to creating a transformative educational environment that fosters intellectual growth, critical thinking, and personal development, preparing students to become innovative global leaders.</p>
+            </div>
+
+            <div class="footer-section contact-section">
+                <h4>Contact Information</h4>
+            <a href="tel:+18005551234"><i class="fas fa-phone"></i> +254 742,003,000</a>
+                <a href="mailto:admissions@excellenceschool.edu"><i class="fas fa-envelope"></i> admissions@uhurusecondary.edu</a>
+                <a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i> 123 Buruburu Way,</a>
+            </div>
+
+            <div class="footer-section newsletter-section">
+                <h4>Stay Connected</h4>
+                <form class="newsletter-form">
+                    <input type="email" id="email" placeholder="Subscribe to our newsletter" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </div>
-        <div class="footerNav">
+
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <nav class="footer-nav">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#admission">Admission</a></li>
-                <li><a href="#academics">Academics</a></li>
-                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
-        <div class="FooterBottom">
-            <p>Copyright &copy; 2025. Developed by 0746283068</p>
+        </nav>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Uhuru Sec School. All Rights Reserved.</p>
         </div>
     </footer>
     <!-- End Footer -->
 
     <script src="script.js"></script>
 </body>
+
 </html>

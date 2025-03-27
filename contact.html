@@ -3,37 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uhuru Secondary - Contact U</title>
+    <title>Uhuru Secondary - Contact Us</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
 <body>
+    <!-- Header -->
     <header class="header">
-        <a href="#Home" class="logo"><span>UHURU</span> SECONDARY</a>
-    
-        <nav class="navbar">
-          <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="requirements.html">Admission</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
-        <div class="dropdown_menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="#Admission">Admission</a></li>
-            <li><a href="#Academics">Academics</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+        <div class="logo-container">
+            <img src="schlogo.jpeg" alt="Uhuru Secondary School Logo" class="logo-image">
+            <a href="index.html" class="logo"><span>UHURU SECONDARY</span></a>
         </div>
-      </header>
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="history.html">School History</a>
+                        <a href="mission.html">Mission & Vision</a>
+                        <a href="leadership.html">Leadership</a>
+                        <a href="achievements.html">Achievements</a>
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                </li>
+                <li><a href="requirements.html">Admission</a></li>
+                <li class="dropdown">
+                    <a href="academics.html">Academics</a>
+                    <div class="dropdown-content">
+                        <a href="curriculum.html">Curriculum</a>
+                        <a href="departments.html">Departments</a>
+                        <a href="academic-calendar.html">Academic Calendar</a>
+                        <a href="#news">Educational News</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Header -->
 
-      <div class="contact-page">
-
-
+    <!-- Contact Page -->
+    <div class="contact-page">
         <div class="contact-container">
             <!-- Contact Form -->
             <div class="contact-form">
@@ -43,27 +55,22 @@
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required>
                     </div>
-                    
                     <div class="form-group">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" name="email" required>
                     </div>
-                    
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
-                    
                     <div class="form-group">
                         <label for="subject">Subject</label>
                         <input type="text" id="subject" name="subject" required>
                     </div>
-                    
                     <div class="form-group">
                         <label for="message">Your Message</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
-                    
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>
@@ -71,7 +78,6 @@
             <!-- Contact Information -->
             <div class="contact-info">
                 <h2>Get in Touch</h2>
-                
                 <div class="info-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <div>
@@ -79,7 +85,6 @@
                         <p>123 Education Street, Learning District, City, Country</p>
                     </div>
                 </div>
-                
                 <div class="info-item">
                     <i class="fas fa-phone"></i>
                     <div>
@@ -87,7 +92,6 @@
                         <p>+254 746 724 500<br>+254 720 123 456</p>
                     </div>
                 </div>
-                
                 <div class="info-item">
                     <i class="fas fa-envelope"></i>
                     <div>
@@ -95,7 +99,6 @@
                         <p>info@uhurusecondary.com<br>admission@uhurusecondary.com</p>
                     </div>
                 </div>
-                
                 <div class="info-item">
                     <i class="fas fa-clock"></i>
                     <div>
@@ -104,19 +107,12 @@
                     </div>
                 </div>
 
-                <!-- Placeholder for Google Maps Embed -->
-                <iframe 
-                    class="school-map" 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8644521653!2d36.81665857453972!3d-1.2844452990575127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10baec6d5c7b%3A0x2f35eecee1cc0db!2sNairobi!5e0!3m2!1sen!2ske!4v1679840461460!5m2!1sen!2ske" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <!-- Google Maps Embed -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.816692343089!2d36.86644337363144!3d-1.2838768987039104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f13fe132c7049%3A0x24eb4d8e31b5644e!2sThe%20Uhuru%20Secondary%20School!5e0!3m2!1sen!2ske!4v1743079197740!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
-
+    <!-- End Contact Page -->
 
     <script src="script.js"></script>
 </body>
