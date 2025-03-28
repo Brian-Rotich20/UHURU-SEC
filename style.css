@@ -499,7 +499,8 @@ html,body{
 }
 
 .admission-process-heading p {
-    color: #6b7280;
+    color: orange;
+    font-size: 1.2rem;
 }
 
 .admission-steps {
@@ -539,7 +540,7 @@ html,body{
     justify-content: center;
     width: 4rem;
     height: 4rem;
-    background-color: #6b7280; /* tertiary color */
+    background: linear-gradient(to right, #071141, #1a2980);
     color: #e5e7eb;
     border-radius: 50%;
     font-size: 1.5rem;
@@ -553,7 +554,7 @@ html,body{
 }
 
 .admission-steps .step-content {
-    margin-left: 1rem;
+    margin-left: 3rem;
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -578,7 +579,7 @@ html,body{
 .btn-primary {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #6b7280;
+    background: linear-gradient(to right, #071141, #1a2980);
     color: #ffffff;
     text-decoration: none;
     border-radius: 0.5rem;
