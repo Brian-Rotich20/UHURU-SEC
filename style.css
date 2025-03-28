@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
 /*general styling*/
 *{
     padding: 0;
@@ -193,8 +194,6 @@ html,body{
 .dropdown_menu {
     display: none;
 }
-
-/* Responsive Design */
 @media screen and (max-width: 1200px) {
     .header {
         padding: 1rem 3%;
@@ -482,100 +481,112 @@ html,body{
         padding: 10px 20px;
       }
     }
-/* admission steps */
+ /* Admission Process Navigation Styles */
 #admission-process {
-    background-color: #f9f9f9;
-    padding: 60px 0;
-    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
 
-.admission-process-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 15px;
+.admission-process-heading {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .admission-process-heading h1 {
-    color: #071141e2;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .admission-process-heading p {
-    color: #666;
-    margin-bottom: 40px;
+    color: #6b7280;
 }
 
 .admission-steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
 
-.step {
+.admission-steps .step {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.admission-steps .step:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    width: 2px;
+    height: 100%;
+    background-color: #e5e7eb; /* light gray background */
+    margin-left: -1px;
+    z-index: 1;
+}
+
+.admission-steps .step a {
     display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    align-items: flex-start;
+    text-decoration: none;
+    color: inherit;
 }
 
-.step:hover {
-    transform: translateY(-5px);
-}
-
-.step-number {
-    width: 60px;
-    height: 60px;
-    background-color: #eb7e02;
-    color: white;
-    border-radius: 50%;
+.admission-steps .step-number {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 20px;
-    flex-shrink: 0;
+    width: 4rem;
+    height: 4rem;
+    background-color: #6b7280; /* tertiary color */
+    color: #e5e7eb;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 10;
+    transition: background-color 0.3s ease;
 }
 
-.step-content h3 {
-    color: #071141e2;
-    margin-bottom: 10px;
-    text-align: left;
+.admission-steps .step-number:hover {
+    background-color: #4b5563; /* secondary color */
 }
 
-.step-content p {
-    color: #666;
-    text-align: left;
-    line-height: 1.6;
+.admission-steps .step-content {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.admission-steps .step-content h3 {
+    letter-spacing: 0.025em;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.admission-steps .step-content p {
+    font-size: 0.875rem;
+    color: #6b7280;
 }
 
 .admission-cta {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 2rem;
 }
 
 .btn-primary {
     display: inline-block;
-    background-color: #eb7e02;
-    color: white;
-    padding: 12px 25px;
+    padding: 0.75rem 1.5rem;
+    background-color: #6b7280;
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #d46a02;
-}
-
-@media (max-width: 768px) {
-    .admission-steps {
-        grid-template-columns: 1fr;
-    }
+    background-color: #4b5563;
 }
 /*======================================================end home=====================================================*/
 /*about us*/
@@ -682,7 +693,7 @@ html,body{
     align-items: center;
     height: 300px;
     background: linear-gradient(to right, #eb7e02, #ec6b02); /* Two-color background */
-    color: white;
+    color: rgb(255, 255, 255);
     position: relative;
     overflow: hidden;
     padding: 20px; /* Add padding for smaller screens */
@@ -690,7 +701,7 @@ html,body{
 
     .angled-section {
     background-color: #ffffff; /* Angled section color */
-    color: #fff;
+    color: #ffffff;
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
     position: absolute;
     top: 0;
