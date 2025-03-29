@@ -66,8 +66,8 @@ html,body{
     width: 100%;
     top: 0;
     left: 0;
-    padding: 1rem 5%;  /* Reduced padding for better responsiveness */
-    background-color: #071141e2;
+    padding: 1rem 5%;  
+    background: linear-gradient(to right, #071141, #1a2980);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -154,7 +154,7 @@ html,body{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #071141e2;
+    background: linear-gradient(to right, #071141, #1a2980);
     min-width: 200px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1000;
@@ -254,7 +254,7 @@ html,body{
     .dropdown_menu li {
         width: 100%;
         text-align: center;
-        padding: 1rem;
+        padding: .8rem;
         border-top: 1px solid rgba(255,255,255,0.1);
     }
 
@@ -522,7 +522,7 @@ html,body{
     left: 2rem;
     width: 2px;
     height: 100%;
-    background-color: #e5e7eb; /* light gray background */
+    background-color: #e5e7eb; 
     margin-left: -1px;
     z-index: 1;
 }
@@ -1450,4 +1450,192 @@ text-align: center;
 .value-grid {
 grid-template-columns: 1fr;
 }
+}
+/* Academic Calendar Container */
+.academic-calendar {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Calendar Header */
+.calendar-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.calendar-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #071141;
+}
+
+.calendar-header p {
+    color: #071141;
+    font-size: 1.2rem;
+    display: inline-block;
+    background: linear-gradient(to right, #071141, #1a2980);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    margin-top: 0.5rem;
+}
+
+/* Term Steps */
+.term-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.term-steps .term {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.term-steps .term:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    width: 2px;
+    height: 100%;
+    background-color: #e5e7eb; 
+    margin-left: -1px;
+    z-index: 1;
+}
+
+.term-steps .term-link {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    color: inherit;
+}
+
+.term-steps .term-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background:linear-gradient(to right, #ff7e00, #ffca00);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 10;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+}
+
+.term-steps .term:hover .term-number {
+    transform: scale(1.1);
+}
+
+.term-steps .term-content {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    width: calc(100% - 6rem);
+}
+
+.term-steps .term-content h3 {
+    letter-spacing: 0.025em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #071141;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+.term-steps .term-content p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+.term-steps .term-content strong {
+    color: #071141;
+    width: 120px;
+    display: inline-block;
+}
+
+/* Event Categories */
+.events-section {
+    margin-top: 1.5rem;
+    border-top: 1px dashed #ccc;
+    padding-top: 1rem;
+}
+
+.events-section h4 {
+    margin-bottom: 0.75rem;
+    color: #071141;
+    font-size: 1.1rem;
+}
+
+.event-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #fff;
+}
+
+.event-date {
+    background: linear-gradient(to right, #ff7e00, #ffb52e);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.85rem;
+    margin-right: 0.75rem;
+    min-width: 85px;
+    text-align: center;
+}
+
+.national-event .event-date {
+    background: linear-gradient(to right, #ff4500, #ffa500);
+}
+
+.cultural-event .event-date {
+    background: linear-gradient(to right, #8e44ad, #9b59b6);
+}
+
+.sports-event .event-date {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+    .term-steps .term-content {
+        width: calc(100% - 5rem);
+    }
+    
+    .term-steps .term-number {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+    
+    .term-steps .term:not(:last-child)::before {
+        top: 3rem;
+        left: 1.5rem;
+    }
+    
+    .event-date {
+        min-width: 70px;
+        font-size: 0.8rem;
+    }
 }
