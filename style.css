@@ -65,7 +65,7 @@ html,body{
     width: 100%;
     top: 0;
     left: 0;
-    padding: 1rem 5%;  /* Reduced padding for better responsiveness */
+    padding: 1rem 5%; 
     background-color: #071141e2;
     backdrop-filter: blur(10px);
     display: flex;
@@ -73,6 +73,674 @@ html,body{
     align-items: center;
     z-index: 100;
 }
+/*gallery*/
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+/* Header styles */
+.gallery-header {
+    background: #fdfdfd; /* Light cream or white background */
+    color: #0056b3; /* Blue text color */
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e0e0e0; /* Subtle border for style */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.gallery-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 86, 179, 0.05) 25%, transparent 25%, 
+              transparent 50%, rgba(0, 86, 179, 0.05) 50%, rgba(0, 86, 179, 0.05) 75%, 
+              transparent 75%, transparent);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.gallery-title {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    color: #0056b3; /* Blue text color */
+    z-index: 2;
+    position: relative;
+}
+
+.gallery-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    color: #0056b3; /* Blue text color */
+    z-index: 2;
+    position: relative;
+}
+
+/* Gallery container */
+.gallery-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Gallery grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 250px;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: white;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery-title {
+        font-size: 2.5rem;
+    }
+    
+    .gallery-subtitle {
+        font-size: 1rem;
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+}
+/*gallery*/
+
+
+/*begin leadership*/
+:root {
+    --primary: #ff6b00;
+    --dark: #000000;
+    --light: #ffffff;
+    --gray: #f5f5f5;
+    --shadow: rgba(0, 0, 0, 0.1);
+  }
+  
+  .leadership-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .leadership-header {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    padding: 30px 0;
+  }
+  
+.leadership-header h1 {
+    font-size: 48px;
+    margin: 0;
+    background: linear-gradient(90deg, var(--dark) 0%, var(--primary) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: black; /* Changed to make the text visible */
+    display: inline-block;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.leadership-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+    height: 3px;
+    background-color: var(--primary);
+}
+  
+  .principal-section {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    background-color: var(--gray);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--shadow);
+  }
+  
+  .principal-image {
+    flex: 0 0 300px;
+    position: relative;
+  }
+  
+  .principal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .principal-content {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .principal-content h2 {
+    color: var(--dark);
+    margin-top: 0;
+    font-size: 28px;
+    border-left: 4px solid var(--primary);
+    padding-left: 15px;
+  }
+  
+  .principal-content h3 {
+    color: var(--primary);
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .principal-content p {
+    line-height: 1.6;
+  }
+  
+  .team-section {
+    margin-bottom: 60px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: var(--dark);
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    right: 45%;
+    height: 3px;
+    background-color: var(--primary);
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .team-card {
+    background-color: var(--gray);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px var(--shadow);
+    transition: transform 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .team-card-header {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .team-card-body {
+    padding: 20px;
+  }
+  
+  .team-card-body ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .team-card-body ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .team-card-body ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .team-image {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .team-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--shadow);
+  }
+  
+  .caption {
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .principal-section {
+      flex-direction: column;
+    }
+    
+    .principal-image {
+      flex: 0 0 200px;
+    }
+    
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+/*end leadership*/
+
+/*begin Achievement*/
+:root {
+    --primary-blue: #0a4d92;
+    --secondary-blue: #1a75ff;
+    --light-blue: #e6f0ff;
+    --primary-orange: #ff6b00;
+    --secondary-orange: #ff8c3a;
+    --light-orange: #fff0e6;
+    --dark: #333333;
+    --light: #ffffff;
+    --gray: #f5f5f5;
+    --shadow: rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .achievement-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+.page-header {
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--primary-orange); /* Changed to make the text visible */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.header-accent {
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-blue), var(--primary-orange));
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+  
+  /* Intro Section */
+  .intro-section {
+    background: linear-gradient(135deg, var(--light-blue), var(--light-orange));
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px var(--shadow);
+  }
+  
+  .intro-content h2 {
+    color: var(--primary-blue);
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .intro-content p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: 28px;
+    color: var(--primary-blue);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-orange);
+    display: flex;
+    align-items: center;
+  }
+  
+  .section-icon {
+    background-color: var(--primary-orange);
+    color: var(--light);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+  
+  /* Academic Performance Section */
+  .academic-performance {
+    margin-bottom: 50px;
+  }
+  
+  .mean-score-card {
+    background-color: var(--light);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--shadow);
+  }
+  
+  .mean-score-card h3 {
+    background-color: var(--primary-blue);
+    color: var(--light);
+    padding: 15px 20px;
+    margin: 0;
+  }
+  
+  .mean-score-container {
+    padding: 20px;
+  }
+  
+  .mean-score-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .mean-score-table th,
+  .mean-score-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .mean-score-table th {
+    background-color: var(--light-blue);
+    color: var(--primary-blue);
+    font-weight: bold;
+  }
+  
+  .mean-score-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .trend-up {
+    color: green;
+  }
+  
+  .trend-down {
+    color: red;
+  }
+  
+  /* Top Students Section */
+  .top-students {
+    margin-bottom: 50px;
+  }
+  
+  .students-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .year-card {
+    background-color: var(--light);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px var(--shadow);
+    transition: transform 0.3s ease;
+  }
+  
+  .year-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .year-header {
+    background: linear-gradient(90deg, var(--primary-blue), var(--secondary-blue));
+    color: var(--light);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: center;
+  }
+  
+  .students-list {
+    padding: 15px;
+  }
+  
+  .student-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .student-item:last-child {
+    border-bottom: none;
+  }
+  
+  .student-grade {
+    font-weight: bold;
+    color: var(--primary-blue);
+  }
+  
+  /* Co-Curricular Achievements Section */
+  .cocurricular-achievements {
+    margin-bottom: 50px;
+  }
+  
+  .achievements-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+  }
+  
+  .achievement-card {
+    background-color: var(--light);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--shadow);
+    transition: transform 0.3s ease;
+  }
+  
+  .achievement-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .achievement-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .achievement-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .achievement-card:hover .achievement-image img {
+    transform: scale(1.05);
+  }
+  
+  .achievement-details {
+    padding: 20px;
+  }
+  
+  .achievement-details h3 {
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .achievement-details p {
+    color: var(--dark);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    margin-bottom: 50px;
+  }
+  
+  .testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+  }
+  
+  .testimonial {
+    background: linear-gradient(135deg, var(--light-blue), var(--light));
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 5px 15px var(--shadow);
+    position: relative;
+  }
+  
+  .testimonial::before {
+    content: "";
+  }
+.testimonial::before {
+    font-size: 80px;
+    color: rgba(10, 77, 146, 0.1);
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    line-height: 1;
+}
+  
+  .testimonial-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .testimonial-content p {
+    font-style: italic;
+    line-height: 1.8;
+  }
+  
+  .testimonial-author {
+    margin-top: 15px;
+    text-align: right;
+    color: var(--primary-blue);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .page-header h1 {
+      font-size: 36px;
+    }
+    
+    .section-title {
+      font-size: 24px;
+    }
+    
+    .intro-section {
+      padding: 25px;
+    }
+    
+    .achievements-gallery,
+    .testimonials-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .page-header h1 {
+      font-size: 28px;
+    }
+    
+    .section-title {
+      font-size: 20px;
+    }
+    
+    .students-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+/*end Achievement*/
 
 /* Logo Container Styles */
 .logo-container {
