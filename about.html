@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-       <!-- Header -->
-       <header class="header">
+     <!-- Header -->
+     <header class="header">
         <div class="logo-container">
             <img src="schlogo.jpeg" alt="Uhuru Secondary School Logo" class="logo-image">
             <a href="index.html" class="logo"><span>UHURU SECONDARY </a>
@@ -39,12 +39,10 @@
                 <li><a href="requirements.html">Admission</a></li>
 
                 <li class="dropdown">
-                    <a href="academics.html">Academics</a>
+                    <a href="#">Academics</a>
                     <div class="dropdown-content">
-                        <a href="curriculum.html">Curriculum</a>
-                        <a href="departments.html">Departments</a>
                         <a href="academic-calendar.html">Academic Calendar</a>
-                        <a href="#news">Educational News</a>
+                        <a href="news.html">Educational News</a>
                     </div>
                 </li>
 
@@ -56,11 +54,28 @@
         <div class="dropdown_menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                
+                <li class="mobile-dropdown">
+                    <a href="about.html">About Us <span class="dropdown-icon">&#9662;</span></a>
+                    <ul class="mobile-dropdown-content">
+                        <li><a href="history.html">School History</a></li>
+                        <li><a href="mission.html">Mission & Vision</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </li>
+                
                 <li><a href="requirements.html">Admission</a></li>
-                <li><a href="#academics">Academics</a></li>
-                <li><a href="#news">Educational News</a></li>
-                <!-- <li><a href="#gallery">Gallery</a></li> -->
+                
+                <li class="mobile-dropdown">
+                    <a href="#">Academics <span class="dropdown-icon">&#9662;</span></a>
+                    <ul class="mobile-dropdown-content">
+                        <li><a href="academic-calendar.html">Academic Calendar</a></li>
+                        <li><a href="news.html">Educational News</a></li>
+                    </ul>
+                </li>
+                
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
