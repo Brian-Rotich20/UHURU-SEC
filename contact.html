@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-        <!-- Header -->
-    <header class="header">
+     <!-- Header -->
+     <header class="header">
         <div class="logo-container">
             <img src="schlogo.jpeg" alt="Uhuru Secondary School Logo" class="logo-image">
-            <a href="index.html" class="logo"><span>UHURU SECONDARY </a>
-                <div class="logo-text">
-                    <p class="small-screen-only">SERVE TO REIGN</p>
-                </div>
+            <a href="index.html" class="logo"><span>USS</span></a>
+            <div class="logo-text">
+                <p>SERVE TO REIGN</p>
+            </div>
         </div>
 
         <nav class="navbar">
@@ -27,8 +27,8 @@
                 <li class="dropdown">
                     <a href="about.html">About Us</a>
                     <div class="dropdown-content">
-                        <a href="history.html">School History</a>
-                        <a href="mission.html">Mission & Vision</a>
+                        <a href="about.html">School History</a>
+                        <a href="about.html">Mission & Vision</a>
                         <a href="leadership.html">Leadership</a>
                         <a href="achievements.html">Achievements</a>
                         <a href="gallery.html">Gallery</a>
@@ -45,10 +45,19 @@
                     </div>
                 </li>
 
-
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Search USS..." name="query" class="search-input">
+                <button type="submit" class="search-button">
+                    <i class="search-icon">&#128269;</i>
+                </button>
+            </form>
+        </div>
 
         <div class="dropdown_menu">
             <ul>
@@ -57,8 +66,8 @@
                 <li class="mobile-dropdown">
                     <a href="about.html">About Us <span class="dropdown-icon">&#9662;</span></a>
                     <ul class="mobile-dropdown-content">
-                        <li><a href="history.html">School History</a></li>
-                        <li><a href="mission.html">Mission & Vision</a></li>
+                        <li><a href="about.html">School History</a></li>
+                        <li><a href="about.html">Mission & Vision</a></li>
                         <li><a href="leadership.html">Leadership</a></li>
                         <li><a href="achievements.html">Achievements</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
@@ -76,10 +85,20 @@
                 </li>
                 
                 <li><a href="contact.html">Contact Us</a></li>
+                
+                <!-- Mobile Search -->
+                <li class="mobile-search">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="Search USS..." name="query">
+                        <button type="submit">&#128269;</button>
+                    </form>
+                </li>
             </ul>
         </div>
     </header>
     <!-- End Header -->
+
+    
     <!-- Contact Page -->
     <div class="contact-page">
         <div class="contact-container">

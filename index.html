@@ -15,10 +15,10 @@
     <header class="header">
         <div class="logo-container">
             <img src="schlogo.jpeg" alt="Uhuru Secondary School Logo" class="logo-image">
-            <a href="index.html" class="logo"><span>UHURU SECONDARY </a>
-                <div class="logo-text">
-                    <p>SERVE TO REIGN</p>
-                </div>
+            <a href="index.html" class="logo"><span>USS</span></a>
+            <div class="logo-text">
+                <p>SERVE TO REIGN</p>
+            </div>
         </div>
 
         <nav class="navbar">
@@ -30,8 +30,8 @@
                 <li class="dropdown">
                     <a href="about.html">About Us</a>
                     <div class="dropdown-content">
-                        <a href="history.html">School History</a>
-                        <a href="mission.html">Mission & Vision</a>
+                        <a href="about.html">School History</a>
+                        <a href="about.html">Mission & Vision</a>
                         <a href="leadership.html">Leadership</a>
                         <a href="achievements.html">Achievements</a>
                         <a href="gallery.html">Gallery</a>
@@ -48,10 +48,20 @@
                     </div>
                 </li>
 
-
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Search USS..." name="query" class="search-input">
+                <button type="submit" class="search-button">
+                    <i class="search-icon">&#128269;</i>
+                </button>
+            </form>
+        </div>
+        <!--search end-->
 
         <div class="dropdown_menu">
             <ul>
@@ -60,8 +70,8 @@
                 <li class="mobile-dropdown">
                     <a href="about.html">About Us <span class="dropdown-icon">&#9662;</span></a>
                     <ul class="mobile-dropdown-content">
-                        <li><a href="history.html">School History</a></li>
-                        <li><a href="mission.html">Mission & Vision</a></li>
+                        <li><a href="about.html">School History</a></li>
+                        <li><a href="about.html">Mission & Vision</a></li>
                         <li><a href="leadership.html">Leadership</a></li>
                         <li><a href="achievements.html">Achievements</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
@@ -79,6 +89,14 @@
                 </li>
                 
                 <li><a href="contact.html">Contact Us</a></li>
+                
+                <!-- Mobile Search -->
+                <li class="mobile-search">
+                    <form action="/search" method="get">
+                        <input type="text" placeholder="Search USS..." name="query">
+                        <button type="submit">&#128269;</button>
+                    </form>
+                </li>
             </ul>
         </div>
     </header>
@@ -131,7 +149,7 @@
                     <h3>Success is our culture</h3>
                     <p>Our performance over the years has been magnificent. Many students have joined great campuses and
                         ended up in good careers.</p>
-                    <a href="academics.html" class="read-more">Our Performance</a>
+                    <a href="achievements.html" class="read-more">Our Performance</a>
                 </div>
             </div>
         </div>
@@ -180,7 +198,7 @@
                     </div>
                 </li>
                 <li class="step">
-                    <div class="step-number">3</div>
+                  <div class="step-number">3</div>
                     <div class="step-content">
                         <h3>Complete Application Form</h3>
                         <p>Fill out the application form completely and accurately. Double-check all information before submission.</p>
